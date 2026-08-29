@@ -1,0 +1,18 @@
+[workspace]
+
+members = ["biliflora_core"]
+
+resolver = "2"
+
+
+
+[profile.release]
+
+lto = true
+
+codegen-units = 1
+
+strip = "symbols"
+
+opt-level = "z"
+
